@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>陆文雨 · 个人展示平台</title>
+  <meta name="description" content="陆文雨的个人展示平台 —— 计算机科学与技术专业学生，展示个人能力与项目作品。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">陆文雨<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#skills">能力</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="菜单">☰</button>
+    </div>
+  </nav>
+
+  <!-- 首页 / Hero -->
+  <header class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="hero__inner">
+      <div class="hero__avatar">
+        <img src="assets/avatar.jpg" alt="陆文雨的照片" />
+      </div>
+      <p class="hero__hello">你好，我是</p>
+      <h1 class="hero__name">陆文雨</h1>
+      <p class="hero__role">计算机科学与技术 · 在读学生</p>
+      <p class="hero__school">上海杉达学院 · 上海</p>
+      <p class="hero__tagline">热爱技术，乐于动手，把想法变成能跑起来的东西。</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">查看我的项目</a>
+        <a href="#contact" class="btn btn--ghost">联系我</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 关于我 -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__kicker">ABOUT</span>
+      <h2 class="section__title">关于我</h2>
+    </div>
+    <div class="about">
+      <div class="about__card">
+        <p>我是<strong>陆文雨</strong>，2006 年出生，上海人，目前就读于<strong>上海杉达学院</strong>计算机科学与技术专业。</p>
+        <p>作为计算机专业的学生，我保持着对新技术的好奇心，喜欢通过<strong>做项目</strong>来把课堂知识落到实处——从写第一行代码到把一个完整的小系统跑起来，每一步都让我更确定自己选对了方向。</p>
+        <p>这个平台记录我的成长轨迹，也展示我真正动手做过的事情。</p>
+      </div>
+      <ul class="about__facts">
+        <li><span>🎓 学校</span><b>上海杉达学院</b></li>
+        <li><span>💻 专业</span><b>计算机科学与技术</b></li>
+        <li><span>📍 城市</span><b>上海</b></li>
+        <li><span>🎂 出生</span><b>2006 年</b></li>
+        <li><span>🚻 性别</span><b>女</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 能力 -->
+  <section class="section section--alt" id="skills">
+    <div class="section__head">
+      <span class="section__kicker">SKILLS</span>
+      <h2 class="section__title">个人能力</h2>
+    </div>
+    <div class="skills" id="skillsGrid"><!-- 由 script.js 渲染 --></div>
+  </section>
+
+  <!-- 项目 -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="section__kicker">PROJECTS</span>
+      <h2 class="section__title">项目作品</h2>
+      <p class="section__sub">这里汇总我做过的所有项目。下面是示例，你可以随时替换成自己的真实作品。</p>
+    </div>
+    <div class="projects" id="projectsGrid"><!-- 由 script.js 渲染 --></div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section section--alt" id="contact">
+    <div class="section__head">
+      <span class="section__kicker">CONTACT</span>
+      <h2 class="section__title">联系我</h2>
+    </div>
+    <div class="contact">
+      <p class="contact__lead">欢迎交流学习、项目合作或任何技术话题。</p>
+      <ul class="contact__list">
+        <li>📧 邮箱：<a href="mailto:2245596489@qq.com">2245596489@qq.com</a></li>
+        <li>🐙 GitHub：<a href="https://github.com/Emily-0717" target="_blank" rel="noopener">github.com/Emily-0717</a></li>
+        <li>💬 微信：<b>Lu717y</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> 陆文雨 · 个人展示平台</p>
+    <p class="footer__tip">本页面内容可在 <code>script.js</code> 中轻松修改。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
